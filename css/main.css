@@ -170,3 +170,68 @@ a {
 	}
 }
 /* SEARCH END */
+
+/* COUNTRIES START */
+.countries {
+	padding-bottom: 45px;
+}
+
+.countries__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 75px;
+}
+
+.countries__item {
+	border-radius: 5px;
+	background-color: var(--bg-secondary);
+	overflow: hidden;
+}
+
+.countries__item-img {
+	width: 100%;
+}
+
+.countries__item-content {
+	padding-top: 24px;
+	padding-left: 24px;
+	padding-bottom: 46px;
+}
+
+.countries__item-name {
+	margin-bottom: 16px;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 144%;
+	color: var(--color-primary);
+}
+
+.countries__item-text {
+	font-size: 14px;
+	line-height: 114%;
+	color: var(--color-primary);
+}
+
+.countries__item-text:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.countries__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.countries__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	.countries__list {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+}
+/* COUNTRIES END */
