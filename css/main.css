@@ -1,0 +1,108 @@
+:root {
+	--color-primary: #111517;
+	--color-secondary: #848484;
+
+	--bg-primary: #f2f2f2;
+	--bg-secondary: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 300;
+	background-color: var(--bg-primary);
+}
+
+main {
+	flex-grow: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.theme-mode {
+	--color-primary: #fff;
+	--color-secondary: #fff;
+
+	--bg-primary: #202c36;
+	--bg-secondary: #2b3844;
+}
+
+/* HEADER START */
+.site-header {
+	padding: 24px 0;
+	background-color: var(--bg-secondary);
+	box-shadow: 0 2px 4px 0 #0000000f;
+}
+
+.site-header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-header__logo-link {
+	font-weight: 800;
+	font-size: 24px;
+	color: var(--color-primary);
+}
+
+.site-header__theme-btn {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background-color: transparent;
+	border: none;
+}
+
+.site-header__theme-btn-text {
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--color-primary);
+}
+
+@media only screen and (max-width: 568px) {
+	.site-header {
+		padding: 30px 0;
+	}
+
+	.site-header__logo-link {
+		font-size: 14px;
+	}
+
+	.site-header__theme-btn-icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.site-header__theme-btn-text {
+		font-size: 12px;
+	}
+}
+/* HEADER END */
